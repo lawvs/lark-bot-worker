@@ -18,13 +18,9 @@ const fetch: ExportedHandlerFetchHandler<WorkerEnv> = async (
     );
   }
 
-  // See https://stackoverflow.com/questions/58491003/how-to-get-the-current-date-in-a-cloudflares-worker
-  const timestamp = String(Date.now()).slice(0, 10);
-
   const robot = createRobot({
     webhook: env.WEBHOOK,
     secret: env.SECRET,
-    timestamp,
   });
 
   return new Response(
