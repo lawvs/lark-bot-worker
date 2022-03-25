@@ -1,0 +1,23 @@
+name = "robot"
+type = "javascript"
+zone_id = ""
+account_id = ""
+workers_dev = true
+route = ""
+usage_model = ""
+compatibility_flags = []
+compatibility_date = ""
+
+[build]
+command = "pnpm run build"
+cwd = "./src"
+watch_dir = "./src"
+
+[build.upload]
+format = "modules"
+dir = "./dist"
+main = "./worker.js"
+
+[[build.upload.rules]]
+type = "ESModule"
+globs = ["**/*.js"]
