@@ -1,0 +1,42 @@
+// Vitest Snapshot v1
+
+exports[`gitlab > should send data match snapshot 1`] = `
+[
+  {
+    "card": {
+      "config": {
+        "wide_screen_mode": true,
+      },
+      "elements": [
+        {
+          "content": "**Feat/build report select**
+added 1 commit",
+          "tag": "markdown",
+        },
+        {
+          "actions": [
+            {
+              "tag": "button",
+              "text": {
+                "content": "立即查看",
+                "tag": "plain_text",
+              },
+              "type": "primary",
+              "url": "https://gitlab.com/username/projectA/-/merge_requests/1#note_2207893",
+            },
+          ],
+          "tag": "action",
+        },
+      ],
+      "header": {
+        "template": "purple",
+        "title": {
+          "content": "projectA 有新的评论",
+          "tag": "plain_text",
+        },
+      },
+    },
+    "msg_type": "interactive",
+  },
+]
+`;
