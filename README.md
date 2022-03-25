@@ -33,7 +33,7 @@ CF_ZONE_ID=xxx
 # Lark/Feishu bot webhook
 WEBHOOK=https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxxxxxx
 # (Optional) Lark/Feishu bot signature secret
-SECRET=xxxxxxxxxxxx
+SIGN_SECRET=xxxxxxxxxxxx
 ```
 
 ## References

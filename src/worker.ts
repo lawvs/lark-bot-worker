@@ -4,7 +4,7 @@ import { handleGitlabWebhook } from "./gitlabHandler";
 
 interface WorkerEnv {
   WEBHOOK?: Webhook;
-  SECRET?: string;
+  SIGN_SECRET?: string;
 }
 
 const fetch: ExportedHandlerFetchHandler<WorkerEnv> = async (
@@ -20,7 +20,7 @@ const fetch: ExportedHandlerFetchHandler<WorkerEnv> = async (
 
   const robot = createRobot({
     webhook: env.WEBHOOK,
-    secret: env.SECRET,
+    signSecret: env.SIGN_SECRET,
   });
 
   return new Response(

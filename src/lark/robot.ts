@@ -3,7 +3,7 @@ import type { Message, MessageWithSign, Webhook } from "./types";
 
 export type RobotOptions = {
   webhook: Webhook;
-  secret?: string;
+  signSecret?: string;
   timestamp?: string;
 };
 
@@ -29,8 +29,8 @@ export const createRobot = (options: RobotOptions) => {
   };
 
   const send = async (data: Message) => {
-    if (options.secret) {
-      const signData = await larkSign(options.secret, options.timestamp);
+    if (options.signSecret) {
+      const signData = await larkSign(options.signSecret, options.timestamp);
       const dataWithSign = {
         ...data,
         ...signData,
