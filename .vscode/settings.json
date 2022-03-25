@@ -1,8 +1,4 @@
 {
   "editor.formatOnSave": true,
-  "cSpell.words": [
-    "feishu",
-    "pnpm",
-    "spack"
-  ]
+  "cSpell.words": ["feishu", "pnpm", "spack"]
 }

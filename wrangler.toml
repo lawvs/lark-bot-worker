@@ -9,7 +9,7 @@ compatibility_flags = []
 compatibility_date = ""
 
 [build]
-command = "pnpm run build"
+# command = "pnpm run build"
 cwd = "./src"
 watch_dir = "./src"
 
