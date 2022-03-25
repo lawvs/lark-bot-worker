@@ -1,0 +1,31 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "jsx": false,
+      "dynamicImport": false,
+      "privateMethod": false,
+      "functionBind": false,
+      "exportDefaultFrom": false,
+      "exportNamespaceFrom": false,
+      "decorators": false,
+      "decoratorsBeforeExport": false,
+      "topLevelAwait": false,
+      "importMeta": false,
+      "preserveAllComments": false
+    },
+    "transform": {
+      "optimizer": {
+        "globals": {
+          "vars": {
+            "process.env.CF_WORKER": "true"
+          }
+        }
+      }
+    },
+    "target": "es2020",
+    "loose": true,
+    "externalHelpers": false,
+    "keepClassNames": false
+  }
+}
