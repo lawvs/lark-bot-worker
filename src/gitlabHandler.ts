@@ -1,5 +1,5 @@
 import type { LarkRobot } from "./lark/robot";
-import type { WebhookEvents } from "./gitlab-events-types";
+import type { WebhookEvents } from "gitlab-event-types";
 
 /**
  * See https://open.feishu.cn/tool/cardbuilder?from=howtoguide
