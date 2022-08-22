@@ -1,4 +1,4 @@
-import { describe, expect, fn, test } from "vitest";
+import { describe, expect, vi, test } from "vitest";
 import { handleGitlabWebhook } from "../gitlabHandler";
 import type { LarkRobot } from "../lark/robot";
 import note from "./fixtures/note.json";
@@ -6,7 +6,7 @@ import note from "./fixtures/note.json";
 describe("gitlab", () => {
   test("should send data match snapshot", async () => {
     const mockRobot: LarkRobot = {
-      send: fn((...args) => {
+      send: vi.fn((...args) => {
         expect(args).toMatchSnapshot();
         return Promise.resolve({ code: 1, msg: "" });
       }),
