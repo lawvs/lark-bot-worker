@@ -1,4 +1,7 @@
+# See https://developers.cloudflare.com/workers/wrangler/configuration/
+# The name of your Worker. Alphanumeric values and dashes only.
 name = "robot"
+main = "./dist/worker.js"
 workers_dev = true
 # account_id = ""
 # route = ""

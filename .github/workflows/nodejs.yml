@@ -52,5 +52,6 @@ jobs:
         env:
           WEBHOOK: ${{ secrets.WEBHOOK }}
           SIGN_SECRET: ${{ secrets.SIGN_SECRET }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          # "CF_ACCOUNT_ID"  is deprecated. Please use "CLOUDFLARE_ACCOUNT_ID", instead.
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || secrets.CF_ACCOUNT_ID }}
           CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}

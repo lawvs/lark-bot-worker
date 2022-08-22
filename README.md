@@ -25,7 +25,7 @@ Lark/Feishu bot on Cloudflare Workers.
 Environment variables:
 
 ```sh
-CF_ACCOUNT_ID=xxx
+CLOUDFLARE_ACCOUNT_ID=xxx
 CF_API_TOKEN=xxx
 # (Optional)
 CF_ZONE_ID=xxx
