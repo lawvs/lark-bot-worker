@@ -6,8 +6,10 @@ workers_dev = true
 # account_id = ""
 # route = ""
 # usage_model = "bundled"
+# A date in the form yyyy-mm-dd, which will be used to determine
+# which version of the Workers runtime is used.
+compatibility_date = "2022-08-01"
 compatibility_flags = []
-compatibility_date = ""
 
 [build]
 # command = "pnpm run build"
