@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@cloudflare/workers-types':
-    specifier: ^3.14.1
-    version: 3.14.1
+    specifier: ^4.20231121.0
+    version: 4.20231121.0
   '@swc/cli':
     specifier: ^0.1.63
     version: 0.1.63(@swc/core@1.3.100)
@@ -35,8 +35,8 @@ devDependencies:
 
 packages:
 
-  /@cloudflare/workers-types@3.14.1:
-    resolution: {integrity: sha512-B1/plF62pt+H2IJHvApK8fdOJAVsvojvacuac8x8s+JIyqbropMyqNqHTKLm3YD8ZFLGwYeFTudU+PQ7vGvBdA==}
+  /@cloudflare/workers-types@4.20231121.0:
+    resolution: {integrity: sha512-+kWfpCkqiepwAKXyHoE0gnkPgkLhz0/9HOBIGhHRsUvUKvhUtm3mbqqoGRWgF1qcjzrDUBbrrOq4MYHfFtc2RA==}
     dev: true
 
   /@cspotcode/source-map-support@0.8.1:
