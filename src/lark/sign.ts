@@ -10,12 +10,12 @@ const webCryptoHmacSha256 = async (secret: string, body = "") => {
     enc.encode(secret),
     algorithm,
     false,
-    ["sign"]
+    ["sign"],
   );
   const signature = await crypto.subtle.sign(
     algorithm.name,
     key,
-    enc.encode(body)
+    enc.encode(body),
   );
   const digest = btoa(String.fromCharCode(...new Uint8Array(signature)));
   return digest;
@@ -26,7 +26,7 @@ const webCryptoHmacSha256 = async (secret: string, body = "") => {
  */
 export const larkSign = async (
   secret: string,
-  timestamp = String(Date.now()).slice(0, 10)
+  timestamp = String(Date.now()).slice(0, 10),
 ) => {
   const payload = `${timestamp}\n${secret}`;
 

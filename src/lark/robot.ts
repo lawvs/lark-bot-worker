@@ -16,7 +16,7 @@ export const createRobot = (options: RobotOptions) => {
    * See [Use bots in groups - lark](https://www.larksuite.com/hc/en-US/articles/360048487736) or [Use bots in groups - feishu](https://www.feishu.cn/hc/en-US/articles/360024984973)
    */
   const sendRaw = async (
-    data: Message | MessageWithSign
+    data: Message | MessageWithSign,
   ): Promise<{ code: number; msg: string }> => {
     const resp = await fetch(options.webhook, {
       method: "POST",

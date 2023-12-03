@@ -70,11 +70,11 @@ export const makeInteractiveCard = ({
         tag: "action",
       },
     ].filter(Boolean),
-  } as const);
+  }) as const;
 
 export const handleGitlabWebhook = async (
   event: WebhookEvents,
-  robot: LarkRobot
+  robot: LarkRobot,
 ) => {
   if ("object_kind" in event && event.object_kind === "note") {
     const card = makeInteractiveCard({

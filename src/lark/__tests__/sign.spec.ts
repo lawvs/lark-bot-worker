@@ -18,8 +18,6 @@ describe("sign", () => {
 
   test("is worker sign correct", async () => {
     process.env.CF_WORKER = "1";
-    globalThis.crypto = (await import("crypto")) as any;
-
     const signData = await larkSign(SECRET, TIMESTAMP);
     expect(signData.timestamp).toBe(TIMESTAMP);
     expect(signData.sign).toBe(SIGNATURE);

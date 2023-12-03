@@ -10,11 +10,11 @@ interface WorkerEnv {
 const fetch: ExportedHandlerFetchHandler<WorkerEnv> = async (
   request,
   env,
-  ctx
+  ctx,
 ) => {
   if (!env.WEBHOOK) {
     throw new Error(
-      "Specified secret 'WEBHOOK' not found in environment variables."
+      "Specified secret 'WEBHOOK' not found in environment variables.",
     );
   }
 
@@ -29,7 +29,7 @@ const fetch: ExportedHandlerFetchHandler<WorkerEnv> = async (
       headers: {
         "Content-Type": "application/json",
       },
-    }
+    },
   );
 };
 
