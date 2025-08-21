@@ -21,8 +21,8 @@ importers:
         specifier: ^20.10.2
         version: 20.19.11
       gitlab-event-types:
-        specifier: ^2.0.1
-        version: 2.1.1
+        specifier: ^3.0.1
+        version: 3.0.1
       prettier:
         specifier: ^3.1.0
         version: 3.6.2
@@ -679,8 +679,8 @@ packages:
     resolution: {integrity: sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==}
     engines: {node: '>=10'}
 
-  gitlab-event-types@2.1.1:
-    resolution: {integrity: sha512-8sGaDi6vUfQsSBHIzOt0abb9V4zDMth9hjKjLtqvtV1zes3uLM+0rBNmjMukEwUzexZm8NfWUvmzfCIxtgB9Zw==}
+  gitlab-event-types@3.0.1:
+    resolution: {integrity: sha512-28zotk2FJSvJ33u6AbkULz5NkaPWEqKpKS+e8L14qmzTi8rCVEAVLk3xAMVzRQR6hDuhOYuzhiGM/DHmkSqqBQ==}
     engines: {node: '>=20'}
 
   glob-parent@5.1.2:
@@ -1717,7 +1717,7 @@ snapshots:
 
   get-stream@6.0.1: {}
 
-  gitlab-event-types@2.1.1: {}
+  gitlab-event-types@3.0.1: {}
 
   glob-parent@5.1.2:
     dependencies:
