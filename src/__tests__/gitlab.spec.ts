@@ -11,7 +11,7 @@ describe("gitlab", () => {
         return Promise.resolve({ code: 1, msg: "" });
       }),
     };
-    await handleGitlabWebhook(note, mockRobot);
+    await handleGitlabWebhook(note as any, mockRobot);
     expect(mockRobot.send).toBeCalledTimes(1);
   });
 });
